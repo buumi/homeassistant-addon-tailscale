@@ -19,6 +19,7 @@ rm -rf /data/ssh/*
 
 options+=(--state=/data/tailscaled.state)
 options+=(--statedir=/data/state)
+options+=(--port=41641)
 
 # Opt out of client log upload to log.tailscale.io
 if ! bashio::debug ; then
